@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <title>youtube clone using html</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
+  <link rel="stylesheet" href="video.css">
+  <style>
+    @media (max-width: 750px) {
+      .grid-columns{
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (min-width: 751px) and (max-width: 1049px)  {
+      .grid-columns{
+        grid-template-columns: 1fr 1fr 1fr ;
+      }
+    }
+      @media (min-width: 1050px) {
+      .grid-columns{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body >
+  <div class="header">
+    <div class="left-section">
+      <img class="hamburger-menu" src="hamburger-menu.svg">
+      <img class="youtube-logo" src="youtube-logo.svg">
+    </div>
+    <div class="middle-section">
+        <input class="search-box" type="text" placeholder="Search" >
+        <button class="search-icon">
+          <img class="search" src="search.svg">
+          <div class="hvr" >Search</div>
+        </button>
+      <button class="voice-search-icon">
+        <img class="voice-search" src="voice-search-icon.svg">
+        <div class="hvr" >Search with your voice</div>
+      </button>
+    </div>
+    <div class="right-section">
+      <div class="upldhvr">
+        <img class="upload" src="upload.svg">
+        <div class="upld">
+          Create
+        </div>
+      </div>
+        <div class="upldhvr">
+          <img class="youtube-apps" src="youtube-apps.svg">
+        <div class="upld">
+          YouTube Apps
+        </div>
+        </div>
+        <div class="notify-icon">
+        <img class="notifications" src="notifications.svg">
+        <div class="upld">
+        Notifications
+        </div>
+        <div class="notify">
+        3
+        </div>
+      </div>
+      <div class="upldhvr">
+        <img class="dog" src="dog.jpg">
+        <div class="hvr">
+          Profile
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="side">
+    <div class="side-icons">
+        <img class="home" src="home.svg">
+      <div>
+      Home
+      </div>   
+    </div>
+    <div class="side-icons">
+      <img class="home" src="explore.svg">
+    <div>
+      Explore
+      </div>
+    </div>
+    <div class="side-icons">
+      <img class="home" src="subscriptions.svg">
+    <div>
+      Subscriptions
+      </div>
+    </div>
+    <div class="side-icons">
+      <img class="home" src="originals.svg">
+    <div>
+        Originals 
+      </div>
+    </div>
+    <div class="side-icons">
+      <img class="home" src="youtube-music.svg">
+    <div>
+        YouTube Music
+      </div>
+    </div>
+    <div class="side-icons">
+      <img class="home" src="library.svg">
+    <div>
+      Library
+      </div>
+    </div>
+  </div>
+  <div class="grid-columns">
+    <div class="first-column">
+      <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" class="video-link">
+        <div class="preview-img">
+            <img class="img-resize" src="thumbnail-1.jpg.webp">
+            <div class="time">
+              14:20
+            </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="owner">
+              <img class="sml-img" src="channel-1.jpg">
+            </div>
+          <div class="video-details">
+              <div class="title">
+                <p class="video-name">
+                  Talking Tech and AI with Google CEO Sundar Pichai!
+                </p>
+                <p class="ownername">
+                  Marques Brownlee
+                </p>
+                <p class="discription">
+                  3.4M views &#183; 6 months ago
+                </p> 
+              </div>
+            </div> 
+        </div>
+      </a>
+    </div>
+    <div class="first-column">
+      <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" class="video-link">
+        <div class="preview-img">
+            <img class="img-resize" src="thumbnail-2.webp">
+            <div class="time">
+              8:22
+            </div>
+          </div>
+        <div class="video-info-grid">
+          <div class="owner">
+              <img class="sml-img" src="channel-2.jpeg">
+            </div>
+          <div class="video-details">
+              <div class="title">
+                <p class="video-name">
+                  Try Not TO Laugh Challenge #9
+                </p>
+                <p class="ownername">
+                  Markiplier
+                </p>
+                <p class="discription">
+                  19M views &#183; 4 years ago
+                </p> 
+              </div>
+            </div>
+        </div>
+        </a> 
+    </div>
+    <div class="first-column">
+      <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w" class="video-link">
+        <div class="preview-img">
+            <img class="img-resize" src="thumbnail-3.webp">
+            <div class="time">
+              9:13
+            </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="owner">
+              <img class="sml-img" src="channel-3.jpeg">
+            </div>
+          <div class="video-details">
+              <div class="title">
+                <p class="video-name">
+                  Crazy Tik Toks Taken Moments Before DISASTER
+                </p>
+                <p class="ownername">
+                  SSSniperWolf
+                </p>
+                <p class="discription">
+                  12M views &#183; 1 year ago
+                </p> 
+              </div>
+            </div> 
+        </div>
+        </a>
+    </div>
+    <div class="first-column">
+      <a href="https://www.youtube.com/watch?v=094y1Z2wpJg" class="video-link">
+        <div class="preview-img">
+            <img class="img-resize" src="thumbnail-4.webp">
+            <div class="time">
+              22:09
+            </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="owner">
+              <img class="sml-img" src="channel-4.jpeg">
+            </div>
+          <div class="video-details">
+              <div class="title">
+                <p class="video-name">
+                  The Simplest Math Problem No One Can Solve - collatz conjecture
+                </p>
+                <p class="ownername">
+                  Veritasium
+                </p>
+                <p class="discription">
+                  20M views &#183; 4 months ago
+                </p> 
+              </div>
+            </div> 
+        </div>
+        </a>
+    </div> 
+    <div class="first-column">
+      <a href="https://www.youtube.com/watch?v=86CQq3pKSUw" class="video-link">
+        <div class="preview-img">
+            <img class="img-resize" src="thumbnail-5.webp">
+            <div class="time">
+              11:17
+            </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="owner">
+              <img class="sml-img" src="channel-5.jpeg">
+            </div>
+          <div class="video-details">
+              <div class="title">
+                <p class="video-name">
+                  Kadane's Algorithm to Maximum Sum Subarray Problem
+                </p>
+                <p class="ownername">
+                    CS Dojo
+                </p>
+                <p class="discription">
+                  519K views &#183; 5 years ago
+                </p> 
+              </div>
+            </div> 
+        </div>
+        </a>
+    </div>
+    <div class="first-column">
+      <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg" class="video-link">
+        <div class="preview-img">
+            <img class="img-resize" src="thumbnail-6.webp">
+            <div class="time">
+              19:59
+            </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="owner">
+              <img class="sml-img" src="channel-6.jpeg">
+            </div>
+          <div class="video-details">
+              <div class="title">
+                <p class="video-name">
+                  Anything You Can Fit In The Circle I'll Pay For 
+                </p>
+                <p class="ownername">
+                  MrBeast
+                </p>
+                <p class="discription">
+                  141M views &#183; 1 year ago
+                </p> 
+              </div>
+            </div> 
+        </div>
+        </a>
+    </div>
+    
+    <div class="first-column">
+      <a href="https://www.youtube.com/watch?v=lFm4EM1juls" class="video-link">
+        <div class="preview-img">
+            <img class="img-resize" src="thumbnail-8.webp">
+            <div class="time">
+              7:12
+            </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="owner">
+              <img class="sml-img" src="channel-8.jpeg">
+            </div>
+          <div class="video-details">
+              <div class="title">
+                <p class="video-name">
+                  Inside The Worlds's Biggest Passenger Plane
+                </p>
+                <p class="ownername">
+                  Tech Vision
+                </p>
+                <p class="discription">
+                  3.7M views &#183; 10 months ago
+                </p> 
+              </div>
+            </div> 
+        </div>
+      </a>
+    </div>
+    <div class="first-column">
+      <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc" class="video-link">
+        <div class="preview-img">
+            <img class="img-resize" src="thumbnail-9.webp">
+            <div class="time">
+              13:17
+            </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="owner">
+              <img class="sml-img" src="channel-9.jpeg">
+            </div>
+          <div class="video-details">
+              <div class="title">
+                <p class="video-name">
+                  The SECRET to Super Human STRENGTH
+                </p>
+                <p class="ownername">
+                  ThenX
+                </p>
+                <p class="discription">
+                  20M views &#183; 3 year ago
+                </p> 
+              </div>
+            </div> 
+        </div>
+      </a>
+    </div>
+    <div class="first-column">
+      <a href="https://www.youtube.com/watch?v=0nZuYyXET3s" class="video-link">
+        <div class="preview-img">
+            <img class="img-resize" src="thumbnail-11.webp">
+            <div class="time">
+              4:10
+            </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="owner">
+              <img class="sml-img" src="channel-11.jpeg">
+            </div>
+          <div class="video-details">
+              <div class="title">
+                <p class="video-name">
+                  Dubai's Crazy Underwater Train and Other Things #only in Dubai
+                </p>
+                <p class="ownername">
+                  Destination Tips
+                </p>
+                <p class="discription">
+                  3M views &#183; 1 year ago
+                </p> 
+              </div>
+            </div> 
+        </div>
+      </a>
+    </div>
+    <div class="first-column">
+      <a href="https://www.youtube.com/watch?v=GJCHksPBUjE&list" class="video-link">
+        <div class="preview-img">
+            <img class="img-resize" src="thumbnail.12.avif">
+            <div class="time">
+              3:41
+            </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="owner">
+              <img class="sml-img" src="channels_profile.jpg">
+            </div>
+          <div class="video-details">
+              <div class="title">
+                <p class="video-name">
+                  The Stranglers - Golden Brown !!!Rare!!!
+                </p>
+                <p class="ownername">
+                  colonna427
+                </p>
+                <p class="discription">
+                  632k views &#183; 18 years ago
+                </p> 
+              </div>
+            </div> 
+        </div>
+      </a>
+    </div>
+    <div class="first-column">
+      <a href="https://www.youtube.com/watch?v=VFxdSPyet3k&t=2s" class="video-link">
+        <div class="preview-img">
+            <img class="img-resize" src="thumbnail-14.jfif">
+            <div class="time">
+              20:15
+            </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="owner">
+              <img class="sml-img" src="channels4_profile.jpg">
+            </div>
+          <div class="video-details">
+              <div class="title">
+                <p class="video-name">
+                  "I've Got The Power!" The Best of Bruce's Powers
+                </p>
+                <p class="ownername">
+                  Big Screen Laughs &#10003;
+                </p>
+                <p class="discription">
+                  2M views &#183; 2 weeks ago
+                </p> 
+              </div>
+            </div> 
+        </div>
+      </a>
+    </div>
+    <div class="first-column">
+      <a href="https://www.youtube.com/watch?v=IFhKB5zHWFg" class="video-link">
+        <div class="preview-img">
+            <img class="img-resize" src="thumbnail-15.jfif">
+            <div class="time">
+              3:00
+            </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="owner">
+              <img class="sml-img" src="chanel-pic.jpg">
+            </div>
+          <div class="video-details">
+              <div class="title">
+                <p class="video-name">
+                  Paris - 3D TIMELAPSE - 300 BCE to 2025
+                </p>
+                <p class="ownername">
+                  CITY 3D TIMELAPSE
+                </p>
+                <p class="discription">
+                  2.7M views &#183; 4 months ago
+                </p> 
+              </div>
+            </div> 
+        </div>
+      </a>
+    </div>
+    
+    
+    </div>
+  </div>  
+</body>
+</html>

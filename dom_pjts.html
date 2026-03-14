@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      DOM
+    </title>
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .subscribe-button{
+        padding: 10px;
+        width: 100px;
+        font-weight:bold ;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+      .subscribed{
+        background-color: rgb(238, 237, 237);
+        color: black;
+      }
+      .heading{
+        margin-top: 50px;
+      }
+      .link{
+        cursor: pointer;
+      }
+      .link:active{
+        color: brown;
+      }
+      .js-input{
+        padding: 8px;
+        font-size: 15px;
+      }
+      .clt{
+        border:none;
+        font-size: 14px;
+        padding: 10px;
+        background-color: green ;
+        color:white;
+        border-radius: 3px;
+        margin-left: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Youtube Subscribe Button
+    </p>
+    <button onclick="change()" class="js-subscribe subscribe-button">
+      Subscribe
+    </button>          
+    <p class="heading">
+      Rock Paper Scissor
+    </p>
+    <a href="org_rockpaperscissor.html" class="link" >
+      click here
+    </a>
+    <p style="margin-top: 50px;">
+      Amazon Shipping Calculator
+    </p>
+    <p>
+      Orders under $40 = +$10 shipping.
+    </p>
+    <p>
+      Orders over $40 = FREE shipping.
+    </p>
+    <input placeholder="Cost of order" class="js-input"  onkeydown=" forenterkey(event)">
+    <button onclick="calculate();" class="clt">
+      Calculate
+    </button>
+    <p class="cValue"></p>
+    <script>
+      function forenterkey(event){
+        if (event.key === 'Enter'){
+          calculate();
+        }
+      }
+      function calculate(){
+        cost=document.querySelector('.js-input');
+        let input = Number(cost.value);
+        if(input <= '40'){
+            input = input + 10;
+        }
+        console.log(input);
+        document.querySelector('.cValue').innerText = `$${input}`;
+        cost.value='';
+      }
+      function change() {
+      const element = document.querySelector('.js-subscribe');
+      if (element.innerText === 'Subscribe'){
+        element.innerHTML='Subscribed';
+        element.classList.add('subscribed')
+      }else{
+        element.innerHTML='Subscribe';
+        element.classList.remove('subscribed');
+      }
+    }
+    </script>
+  </body>
+</html>
